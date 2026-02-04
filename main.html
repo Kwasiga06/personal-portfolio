@@ -33,6 +33,28 @@
         color: var(--text);
         text-decoration: none;
     }
+    .dashed a,
+    .dashed a:visited,
+    .dashed a:active,
+    .dashed a:hover{
+        color: var(--text);
+        text-decoration: none;
+    }
+    .dashed{
+        list-style-type: disc;
+    }
+    .dashed li::before {
+      content: "- ";
+      color: var(--text);
+      margin-right: 0.5em;
+    }
+    .dashed {
+            list-style-type: none;
+            padding-left: 0;
+         }
+         .dashed li {
+            margin-bottom: 1em;
+    }
     </style>
     </head>
     <body>
@@ -46,14 +68,19 @@
         
         <br>
         <h4>myInfo</h4>
-            <p> - Math & CS student at Fordham Univeristy ('28')</p>
-            <p> - New York, NY</p>
-            <p> - Email: kwasigyimahasante06@gmail.com</p>
-            <p> - Python, C++, Bash</p>
-
+        <ul class="dashed">
+            <li>Math &amp; CS student at Fordham Univeristy ('28')</li>
+            <li>CompTIA Sec+ &amp; CodePath Cybersecurity Fellow</li>
+            <li>New York, NY</li>
+            <li>Email: kwasigyimahasante06@gmail.com</li>
+            <li>Python, C++, Bash</li>
+        </ul>
         <br>
         <div class="projects">
             <h4>myProjects</h4>
+            <ul class="dashed">
+                <li><a href="https://github.com/Kwasiga06/security-scanner" target="_blank">AI/ML Security Scanner</a></li>
+            </ul>
         </div>
 
     
