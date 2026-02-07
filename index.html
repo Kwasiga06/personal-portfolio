@@ -40,8 +40,12 @@
         color: var(--text);
         text-decoration: none;
     }
-    .dashed{
-        list-style-type: disc;
+    .dashed-indent {
+        list-style-type: none;
+        padding: 1.5em;
+    }
+    .dashed-indent li::before {
+        content: "";
     }
     .dashed li::before {
       content: "- ";
@@ -50,9 +54,9 @@
     }
     .dashed {
             list-style-type: none;
-            padding-left: 0;
+            padding-left: 20px;
          }
-         .dashed li {
+    .dashed li {
             margin-bottom: 1em;
     }
     </style>
@@ -79,7 +83,12 @@
         <div class="projects">
             <h4>myProjects</h4>
             <ul class="dashed">
-                <li><a href="https://github.com/Kwasiga06/apollo" target="_blank">Apollo</a></li>
+                <li><a href="https://github.com/Kwasiga06/apollo" target="_blank">Apollo</a>
+                    <ul class="dashed-indent">
+                        <li> An AI-powered academic assistant that helps college students master their coursework through intelligent daily quizzes.</li>
+                    </ul>
+                </li>
+                
             </ul>
         </div>
 
