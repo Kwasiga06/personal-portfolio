@@ -28,17 +28,37 @@
     }
     .links a,
     .links a:visited,
-    .links a:active,
+    .links a:active {
+        color: var(--text);
+        text-decoration: underline;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
     .links a:hover {
         color: var(--text);
-        text-decoration: none;
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: var(--text);
+        color: var(--bg);
+        padding: 2px 4px;
+        transition: all 0.3s ease;
     }
     .dashed a,
     .dashed a:visited,
-    .dashed a:active,
-    .dashed a:hover{
+    .dashed a:active {
         color: var(--text);
-        text-decoration: none;
+        text-decoration: underline;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    .dashed a:hover {
+        color: var(--text);
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: var(--text);
+        color: var(--bg);
+        padding: 2px 4px;
+        transition: all 0.3s ease;
     }
     .dashed-indent {
         list-style-type: none;
@@ -73,10 +93,10 @@
         <br>
         <h4>myInfo</h4>
         <ul class="dashed">
-            <li>Math &amp; CS student at Fordham Univeristy '28</li>
-            <li>CompTIA Sec+ &amp; CodePath Cybersecurity Fellow</li>
+            <li> Math &amp; CS @ Fordham Univeristy '28</li>
+            <li><a href="compTIA_ Sec+.pdf" target="_blank">CompTIA Sec+</a> &amp; CodePath Cybersecurity Fellow</li>
             <li>New York, NY</li>
-            <li>Email: kwasigyimahasante06@gmail.com</li>
+            <li><a href="mailto:kwasigyimahasante06@gmail.com">kwasigyimahasante06@gmail.com</a></li>
             <li>Python, C++, Bash</li>
         </ul>
         <br>
