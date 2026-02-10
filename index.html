@@ -62,7 +62,7 @@
     }
     .dashed-indent {
         list-style-type: none;
-        padding: 1.5em;
+        padding: 1em;
     }
     .dashed-indent li::before {
         content: "";
@@ -79,13 +79,61 @@
     .dashed li {
             margin-bottom: 1em;
     }
+    .fordham {
+        position: relative;
+        cursor: default;
+    }
+    .fordham::after {
+        content: "GO RAMS!";
+        position: absolute;
+        bottom: calc(100% + 6px);
+        left: 50%;
+        transform: translateX(-50%) scale(0.85);
+        background: #8B0000;
+        color: white;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 3px 8px;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .fordham:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+    .github-link {
+        position: relative;
+        display: inline-block;
+    }
+    .github-link::after {
+        content: "🤞🏿 Ryoiki Tenkai";
+        position: absolute;
+        bottom: calc(100% + 6px);
+        left: 50%;
+        transform: translateX(-50%) scale(0.85);
+        background: #2a004e;
+        color: #d4aaff;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 3px 8px;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .github-link:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
     </style>
     </head>
     <body>
 
         <h2>Kwasi Gyimah-Asante</h2>
         <div class="links"> 
-            <a href="https://github.com/Kwasiga06" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://github.com/Kwasiga06" class="github-link" target="_blank" rel="noopener noreferrer">Github</a>
             <a href="https://www.linkedin.com/in/kwasigyimahasante/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             <a href="Resume.pdf" target="_blank">Resume</a>
         </div>
@@ -93,22 +141,21 @@
         <br>
         <h4>myInfo</h4>
         <ul class="dashed">
-            <li> Math &amp; CS @ Fordham Univeristy '28</li>
+            <li> Math &amp; CS @ <span class="fordham">Fordham Univeristy</span> '28</li>
             <li><a href="compTIA_ Sec+.pdf" target="_blank">CompTIA Sec+</a> &amp; CodePath Cybersecurity Fellow</li>
             <li>New York, NY</li>
             <li><a href="mailto:kwasigyimahasante06@gmail.com">kwasigyimahasante06@gmail.com</a></li>
-            <li>Python, C++, Bash</li>
+            <li>Python, C++, JavaScript, Bash</li>
         </ul>
         <br>
         <div class="projects">
             <h4>myProjects</h4>
             <ul class="dashed">
-                <li><a href="https://github.com/Kwasiga06/apollo" target="_blank">Apollo</a>
+                <li><a href="https://github.com/Kwasiga06/apolloai" target="_blank">Apollo</a>
                     <ul class="dashed-indent">
                         <li> An AI academic assistant that helps college students review their coursework through daily quizzes.</li>
                     </ul>
                 </li>
-                
             </ul>
         </div>
 
