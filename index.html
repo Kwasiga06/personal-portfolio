@@ -2,9 +2,17 @@
 <html>
     <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwasi Gyimah-Asante</title>
+    <link rel="icon" type="image/png" href="K-image.png">
 
     <style>
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
         :root {
         --bg: black;
         --text: white;
@@ -17,8 +25,6 @@
         color: var(--text);
         font-family: monospace, monospace;
         font-size: 15px;
-        justify-content: center;
-        align-items: center;
         padding-left: 10rem;
         padding-right: 10rem;
         padding-top: 4rem;
@@ -130,33 +136,40 @@
         opacity: 1;
         transform: translateX(-50%) scale(1);
     }
+    @media (max-width: 768px) {
+        html, body {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
     </style>
     </head>
     <body>
 
-        <h3>kwasi gyimah-asante</h3>
+        <img src="K-image.png" alt="K logo" class="logo">
+        <h3>Kwasi Gyimah Asante</h3>
         <div class="links"> 
-            <a href="https://github.com/Kwasiga06" class="github-link" target="_blank" rel="noopener noreferrer">github</a>
-            <a href="https://www.linkedin.com/in/kwasigyimahasante/" target="_blank" rel="noopener noreferrer">linkedin</a>
-            <a href="Resume.pdf" target="_blank">resume</a>
+            <a href="https://github.com/Kwasiga06" class="github-link" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://www.linkedin.com/in/kwasigyimahasante/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <a href="Resume.pdf" target="_blank">Resume</a>
         </div>
         
         <br>
-        <h4>myinfo</h4>
+        <h4>myInfo</h4>
         <ul class="dashed">
-            <li> math &amp; cs @ <span class="fordham">fordham univeristy</span> '28</li>
-            <li><a href="compTIA_ Sec+.pdf" target="_blank">comptia sec+</a> &amp; codepath cybersecurity fellow</li>
-            <li>new york, ny</li>
+            <li> Math &amp; CS @ <span class="fordham"><a href="https://www.fordham.edu/academics/departments/math-and-computer--information-sciences/" target="_blank" rel="noopener noreferrer">Fordham Univeristy</a></span> '28</li>
+            <li><a href="compTIA_ Sec+.pdf" target="_blank">CompTIA Sec+</a> &amp; codepath cybersecurity fellow</li>
+            <li>New York, NY</li>
             <li><a href="mailto:kwasigyimahasante06@gmail.com">kwasigyimahasante06@gmail.com</a></li>
-            <li>python, c++, javascript, bash</li>
+            <li>Python, C++, JavaScript, Bash</li>
         </ul>
         <br>
         <div class="projects">
-            <h4>myprojects</h4>
+            <h4>myProjects</h4>
             <ul class="dashed">
-                <li><a href="https://github.com/Kwasiga06/apolloai" target="_blank">apollo</a>
+                <li><a href="https://github.com/Kwasiga06/apolloai" target="_blank">Apollo AI</a>
                     <ul class="dashed-indent">
-                        <li> an ai study tool  that helps college students review their coursework through weekly quizzes.</li>
+                        <li> An AI study tool  that helps college students review their coursework through weekly quizzes.</li>
                     </ul>
                 </li>
             </ul>
